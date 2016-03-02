@@ -1,5 +1,6 @@
 package com.jenkins.JenkinsTestProject;
 
+import junit.framework.Assert;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -33,6 +34,6 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        Assert.assertEquals("Different Names", "JenkinsTestProject", App.getName()); 
     }
 }
